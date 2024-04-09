@@ -1,16 +1,18 @@
 import './App.css'
 
-// import { Outlet } from "react-router-dom";
+import Navigation from "./components/Navigation/Navigation"
+import Footer from './components/Footer/Footer';
+import { Outlet } from "react-router-dom";
 
 function App() {
 
   return (
     <div className='app-container'>
-        {/* NavBar */}
+        < Navigation />
         <div className='main-content'>
-        {/* Outlet */}
+        <Outlet />
         </div>
-        {/* Footer */}
+        <Footer />
     </div>
   )
 }
